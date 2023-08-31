@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="indexstyle.css"
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login or signup.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        </div>
+        
+    </div>
+<!------------------- cart items ------------------------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>T-Shirt (RED)</p>
+                            <small>Price : ₹450</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>₹450</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Shoe(BLACK)</p>
+                            <small>Price : ₹1200</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>₹1200</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Pant(BROWN)</p>
+                            <small>Price : ₹700</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>₹700</td>
+            </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹2350</td>
+            </tr>
+            <tr>
+                <td>GST</td>
+                <td>₹50</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹2400</td>
+            </tr>
+        </table>
+    </div>
+    <a href="payment.html" class="btn">Pay with QR</a>
+</div>
+<!------------------- footer ------------------------->
+<div class="other-footer">
+    <div class="container">
+        <div class="row">
+            <h3>E-Commerce Web Development</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>

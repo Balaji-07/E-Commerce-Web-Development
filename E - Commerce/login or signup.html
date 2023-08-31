@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login or Signup</title>
+      <link rel="stylesheet" href="style1.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="tit">
+            <center><h2>E-Commerce Web Designing</h2></center><br>
+         </div>
+         <div class="title-text">
+            <div class="title login">Login</div>
+            <div class="title signup">Signup</div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login" id="login">   
+                  <div class="field">
+                     <input type="email"  placeholder="Email Address" id="username" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" id="password" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="button" value="Login" id="submit" onclick="validate()"/>
+                  </div>
+                  <div class="signup-link">
+                     <center><p>Don't have an account?</p></center>
+                     <center><a href="">Signup now..</a></center>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <label>EmailAddress</label>
+                     <input type="text" placeholder="Email Address" required id="signEmail">
+                  </div>
+                  <div class="field">
+                     <label>Password</label>
+                     <input type="password" placeholder="Password" required id="signPassword">
+                  </div>
+                  <div class="field">
+                     <label>ConfirmPassword</label>
+                     <input type="password" placeholder="Confirm password" required id="cpassword">
+                  </div>
+                  <br>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="button" value="Signup">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <script>
+         function validate(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if ( username == "balajisunder17@gmail.com" && password == "admin"){
+               window.location="product.html";
+               return false;
+            }
+         else{
+                  alert ("Provide a valid mailId and password");
+                  return false;
+                     }
+         }
+      </script>
+
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script>
+   </body>
+</html>
